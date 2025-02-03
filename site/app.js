@@ -35,22 +35,6 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
-//notatka
-
-let inpGs= false;
-
-function noteGs (test){
-  console.warn(test);
-  if(!inpGs){
-    document.getElementById('note').classList.add('overlay');
-    inpGs = true
-  }else{
-    document.getElementById('note').classList.remove('overlay');
-    inpGs = false
-  };
-};
-
-
 //dropdownMenu
 
 document.addEventListener("DOMContentLoaded", function () {
