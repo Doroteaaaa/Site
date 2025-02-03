@@ -153,6 +153,7 @@ header{
     z-index: 2;
     left: auto;
     right: 0;
+    margin-top: 40px;
 }
 
 .list-header:hover .fly-2{
