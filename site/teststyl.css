@@ -1,7 +1,3 @@
-:root {
-    --swiper-navigation-size: 80px;
-}
-
 body{
     margin: 0;
     padding: 0;
@@ -49,6 +45,8 @@ header{
     float: left;
 }
 
+/*NAVBAR*/
+
 .list-1{
     display: flex;
     gap: 10rem;
@@ -58,21 +56,11 @@ header{
     justify-content: center;
 }
 
-@media screen and (max-width: 768px) {
-    .list-1{
-        display: flex;
-        gap: 3rem;
-        text-align: center;
-        align-items: center;
-        width: 85%;
-        justify-content: center;
-    }
-}
-
 .list-header{
     text-decoration: none;
     color: white;
     display: inline-flex;
+    overflow: hidden;
     text-align: center;
 }
 
@@ -83,15 +71,14 @@ header{
 
 .btn-nav{
     cursor: pointer;
-    border: none;
+    text-decoration: none;
+    overflow: hidden;
     background-color: #622040;
     color: white;
     padding: 10px;
-    font-family: 'Times New Roman', Times, serif;
-    font-size: 17px;
 }
 
-/* .w-line{
+.w-line{
     transition: .3s;
 }
 
@@ -106,7 +93,7 @@ header{
 
 .w-line:hover .w-line-2{
     font-weight: 600;
-} */
+}
 
 
 /* SWIPER */
@@ -138,6 +125,10 @@ header{
 .swiper-btn{
     color: #622040;
     font-size: 80px;
+}
+
+:root {
+    --swiper-navigation-size: 80px;
 }
 
 /* SWIPER */
@@ -259,27 +250,4 @@ header{
 .knt{
     display: flex;
     justify-content: center;
-}
-
-/* NOTATKI */
-
-.note{
-    width: 350px;
-    height: 370px;
-    background-size: cover;
-    display: inline-flex;
-}
-
-.m-note{
-    text-align: center;
-}
-
-.overlay{
-    display: flex;
-    position: absolute;
-    z-index: 78;
-    width: 100%;
-    height: 270%;
-    margin-top: -165.4px;
-    background-size: cover;
 }
