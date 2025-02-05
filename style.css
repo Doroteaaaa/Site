@@ -91,24 +91,6 @@ header{
     font-size: 17px;
 }
 
-/* .w-line{
-    transition: .3s;
-}
-
-.w-line:hover::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    border-bottom: 1ps solid white;
-}
-
-.w-line:hover .w-line-2{
-    font-weight: 600;
-} */
-
-
 /* SWIPER */
 
 .swiper{
@@ -154,6 +136,7 @@ header{
     left: auto;
     right: 0;
     margin-top: 40px;
+    text-align: center;
 }
 
 .list-header:hover .fly-2{
@@ -247,40 +230,39 @@ header{
     color: #622040;
 }
 
-.discord{
-    width: 20px;
-    height: 20px;
-}
-
-.knt-ul{
-    list-style: none;
-    display: inline-block;
-}
-
 .knt{
     display: flex;
     justify-content: center;
+    text-align: center;
+    width: 49.5%;
+    border-right: 2px solid white;
+    margin-top: 20px;
+    height: 500px;
+}
+
+.text-2{
+    color: white;
+
+}
+
+.f-cont{
+    display: flex;
+    flex-direction: column;
 }
 
 /* NOTATKI */
 
 .note{
-    width: 350px;
-    height: 370px;
+    transform: scale(0.3);
+    object-fit: contain;
     background-size: cover;
     display: inline-flex;
+    margin: -330px;
+    margin-top: -650px;
+    margin-bottom: -680px;
 }
 
 .m-note{
     text-align: center;
 }
 
-.overlay{
-    display: flex;
-    position: absolute;
-    z-index: 78;
-    width: 100%;
-    height: 270%;
-    margin-top: -165.4px;
-    background-size: cover;
-}
