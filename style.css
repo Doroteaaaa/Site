@@ -267,25 +267,16 @@ header{
     text-align: center;
 }
 
+.fly-phone{
+    display: none;
+}
+
 .more{
     display: none;
 }
 
-.fly-phone{
+.close{
     display: none;
-    width: 70%;
-    background: #622040;
-    position: absolute;
-    float: left;
-    left: 0;
-    top: 0;
-    z-index: 2;
-    height: 659px;
-}
-
-.more-text{
-    color: white;
-    padding-top: 100px;
 }
 
 @media screen and (max-width: 500px) {
@@ -365,4 +356,24 @@ header{
         height: 100%;
     }
 
+    .more{
+        display: flex;
+    }
+    
+    .fly-phone{
+        display: none;
+        width: 70%;
+        background: #622040;
+        position: absolute;
+        float: left;
+        left: 0;
+        top: 0;
+        z-index: 2;
+        height: 659px;
+    }
+    
+    .more-text{
+        color: white;
+        padding-top: 100px;
+    }
 }
