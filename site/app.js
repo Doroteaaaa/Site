@@ -35,6 +35,17 @@ var swiper = new Swiper(".mySwiper", {
     },
 });
 
+if (window.matchMedia("(max-width: 500px)").matches){
+  var swiper = new Swiper(".mySwiper",{
+    slidesPerView: 3,
+    spaceBetween: 5,
+    navigation:{
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }
+  })
+};
+
 //dropdownMenu
 
 document.addEventListener("DOMContentLoaded", function () {

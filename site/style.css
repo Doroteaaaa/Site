@@ -1,5 +1,6 @@
 :root {
     --swiper-navigation-size: 80px;
+    --swiper2-navigation-size: 100px;
 }
 
 body{
@@ -91,24 +92,6 @@ header{
     font-size: 17px;
 }
 
-/* .w-line{
-    transition: .3s;
-}
-
-.w-line:hover::after{
-    content: '';
-    position: absolute;
-    bottom: 0;
-    right: 0;
-    left: 0;
-    border-bottom: 1ps solid white;
-}
-
-.w-line:hover .w-line-2{
-    font-weight: 600;
-} */
-
-
 /* SWIPER */
 
 .swiper{
@@ -154,6 +137,7 @@ header{
     left: auto;
     right: 0;
     margin-top: 40px;
+    text-align: center;
 }
 
 .list-header:hover .fly-2{
@@ -247,32 +231,105 @@ header{
     color: #622040;
 }
 
-.discord{
-    width: 20px;
-    height: 20px;
-}
-
-.knt-ul{
-    list-style: none;
-    display: inline-block;
-}
-
 .knt{
     display: flex;
     justify-content: center;
+    text-align: center;
+    width: 49.5%;
+    border-right: 2px solid white;
+    margin-top: 20px;
+    height: 500px;
+}
+
+.text-2{
+    color: white;
+
+}
+
+.f-cont{
+    display: flex;
+    flex-direction: column;
 }
 
 /* NOTATKI */
 
 .note{
-    width: 300px;
-    height: 600px;
+    transform: scale(0.3);
     object-fit: contain;
     background-size: cover;
     display: inline-flex;
+    margin: -330px;
+    margin-top: -650px;
+    margin-bottom: -680px;
 }
 
 .m-note{
     text-align: center;
 }
 
+.more{
+    display: none;
+}
+
+@media screen and (max-width: 500px) {
+    .btn-nav{
+        display: none;
+    }
+
+    .logo{
+        width: 100%;
+    }
+
+    .head{
+        display: none;
+    }
+
+    body{
+        width: 100%;
+    }
+
+    .banner{
+        height: 200px;
+    }
+
+    .banner-text{
+        padding-top: 50px;
+        font-size: 10px;
+    }
+
+    .btn-banner{
+        padding: 2px;
+        margin-top: 10px;
+        width: 93px;
+        height: 21px;
+        font-size: 8px;
+    }
+
+    .heart{
+        display: none;
+    }
+
+    .more{
+        cursor: pointer;
+        border: none;
+        background-color: #622040;
+        color: white;
+        padding: 10px;
+        font-family: 'Times New Roman', Times, serif;
+        font-size: 30px;
+        display: flex;
+    }
+
+    .list-1{
+        display: none;
+    }
+
+    .i-header{
+        justify-content: center;
+    }
+
+    .banner-section{
+        width: 100%;
+        height: 100%;
+    }
+}
