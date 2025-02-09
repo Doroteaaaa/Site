@@ -10,7 +10,7 @@
 </head>
 <body>
 
-<!--   <div id="fly" class="fly">
+    <div id="fly" class="fly">
         <div style="float: right;">
             <ion-icon name="close" id="close-btn" onclick="openSearch()"></ion-icon>
         </div>
@@ -21,18 +21,26 @@
             <a href="regulamin.html" id="close-btn" onclick="openSearch()">Regulamin</a>
         </div>
     </div>
-    <div id="box-shadow" class="box-shadow"></div>--> 
+    <div id="box-shadow" class="box-shadow"></div> 
 
     <header>
         <div class="d-flex">
             <div class="i-header">
-                <button class="more">
+                <button id="more" class="more" onclick="openFly()">
                     <ion-icon name="more"></ion-icon>
                 </button>
+                <button id="close-more" class="close" onclick="closeFly()">
+                    <ion-icon name="close"></ion-icon>
+                </button>
+
+                <div id="pfly" class="fly-phone">
+                    <strong class="more-text">MENU ITEMS</strong>
+                </div>
+
                 <a href="" class="heart">
                     <ion-icon name="heart-empty"></ion-icon>
                 </a>
-                <a href="index.html">
+                <a href="index.html" style="z-index: 4;">
                     <img class="logo" src="image/logo.png" alt="">
                 </a>
                 <a href="" class="head">

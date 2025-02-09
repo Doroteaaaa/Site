@@ -48,6 +48,21 @@ if (window.matchMedia("(max-width: 500px)").matches){
 
 //dropdownMenu
 
+//fly-phone//
+
+function openFly() {
+  document.getElementById("pfly").style.display = "flex";
+  document.getElementById("more").style.display = "none";
+  document.getElementById("close-more").style.display = "flex";
+}
+
+function closeFly() {
+  document.getElementById("pfly").style.display = "none";
+  document.getElementById("more").style.display = "flex";
+  document.getElementById("close-more").style.display = "none";
+}
+//fly-phone//
+
 document.addEventListener("DOMContentLoaded", function () {
   const headers = document.querySelectorAll(".list-header");
 
