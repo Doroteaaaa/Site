@@ -251,6 +251,10 @@ header{
     flex-direction: column;
 }
 
+.close{
+    display: none;
+}
+
 /* NOTATKI */
 
 .note{
