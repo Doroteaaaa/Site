@@ -26,29 +26,25 @@ dropdownMenu.addEventListener('click',function(event){
     event.stopPropagation();
 })
 
-var swiper = new Swiper(".mySwiper", {
+if (window.matchMedia("(max-width: 500px)").matches){
+  var swiper = new Swiper(".mySwiper",{
+    slidesPerView: 3,
+    spaceBetween: 5,
+    navigation:{
+      nextEl: ".swiper-button-next",
+      prevEl: ".swiper-button-prev",
+    }
+  })
+}else{
+  var swiper = new Swiper(".mySwiper", {
     slidesPerView: 7,
     spaceBetween: 10,
     navigation: {
       nextEl: ".swiper-button-next",
       prevEl: ".swiper-button-prev",
     },
-});
-
-//notatka
-
-let inpGs= false;
-
-function noteGs (){
-  if(!inpGs){
-    document.getElementById(`note`).classList.add('overlay');
-    inpGs = true
-  }else{
-    document.getElementById(`note`).classList.remove('overlay');
-    inpGs = false
-  };
+  });
 };
-
 
 //dropdownMenu
 
