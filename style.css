@@ -300,19 +300,6 @@ header{
         width: 100%;
     }
 
-    .banner-text{
-        padding-top: 50px;
-        font-size: 10px;
-    }
-
-    .btn-banner{
-        padding: 2px;
-        margin-top: 10px;
-        width: 93px;
-        height: 21px;
-        font-size: 8px;
-    }
-
     .heart{
         display: none;
     }
@@ -353,12 +340,6 @@ header{
     .more{
         display: flex;
     }
-    
-    .banner img{
-        transform: rotate(90deg);
-        width: auto;
-        height: 100%;
-    }
 
     .fly-phone{
         display: none;
@@ -375,5 +356,15 @@ header{
     .more-text{
         color: white;
         padding-top: 100px;
+    }
+
+    .banner-text{
+        font-size: 15px;
+        color: #622040;
+        position: absolute;
+        top: 35%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        padding: 10px 20px;
     }
 }
