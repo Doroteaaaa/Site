@@ -12,10 +12,21 @@
     <header>
         <div class="d-flex">
             <div class="i-header">
+                <button id="more" class="more" onclick="openFly()">
+                    <ion-icon name="more"></ion-icon>
+                </button>
+                <button id="close-more" class="close" onclick="closeFly()">
+                    <ion-icon name="close"></ion-icon>
+                </button>
+
+                <div id="pfly" class="fly-phone">
+                    <strong class="more-text">MENU ITEMS</strong>
+                </div>
+
                 <a href="" class="heart">
                     <ion-icon name="heart-empty"></ion-icon>
                 </a>
-                <a href="index.html">
+                <a href="index.html" style="z-index: 4;">
                     <img class="logo" src="image/logo.png" alt="">
                 </a>
                 <a href="" class="head">
@@ -56,24 +67,27 @@
                         </button>
                         <div class="fly-2">
                             <div class="line"></div>
-                            <span class="knt">
-                                <ul class="knt-ul">
-                                    <li><h4>FRONTEND</h4></li>
-                                    <li>
-                                        <img class="discord" src="icons/discord.png" alt="">
-                                        <a href="https://discord.com/users/853327164354723851">doro_tea</a>
-                                    </li>
-                                    <li></li>
-                                </ul>
-                                <ul class="knt-ul">
-                                    <li><h4>BACKEND</h4></li>
-                                    <li>
-                                        <img class="discord" src="icons/discord.png" alt="">
-                                        <a href="https://discord.com/users/599511908852170753">pan_andrzej</a>
-                                    </li>
-                                    <li></li>
-                                </ul>
-                            </span>
+                                <div style="justify-content: center;">
+                                    <div class="knt" style="float: left; border-right: 5px solid white;">
+                                        <div class="f-cont"><strong class="text-2">DORO_TEA</strong></div><br/>
+                                        <div class="f-cont">
+                                            <a href="https://discord.com/users/853327164354723851">
+                                                <i class="fa-brands fa-discord"></i>
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                        </div>
+                                    </div>
+                                        
+                                    <div class="knt" style="float: right;"> 
+                                        <div class="f-cont"><strong class="text-2">PAN_ANDRZEJ</strong></div><br/>
+                                        <div class="f-cont">
+                                            <a href="https://discord.com/users/599511908852170753">
+                                                <i class="fa-brands fa-discord"></i>
+                                                <i class="fa-brands fa-instagram"></i>
+                                            </a>
+                                        </div>       
+                                    </div>
+                                </div>
                         </div>
                 </li>
             </ul>
@@ -82,11 +96,6 @@
     </header>
 
     <main class="m-note">
-        <img class="note" src="image/notatki/fizyka 04.02.25.jpg" alt="">
-        <img class="note" src="image/notatki/fizyka 04.02.25.jpg" alt="">
-        <img class="note" src="image/notatki/fizyka 04.02.25.jpg" alt="">
-        <img class="note" src="image/notatki/fizyka 04.02.25.jpg" alt="">
-        <img class="note" src="image/notatki/fizyka 04.02.25.jpg" alt="">
         <img class="note" src="image/notatki/fizyka 04.02.25.jpg" alt="">
 
     </main>
