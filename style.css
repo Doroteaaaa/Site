@@ -65,8 +65,13 @@ header{
         gap: 3rem;
         text-align: center;
         align-items: center;
-        width: 85%;
+        width: 100%;
         justify-content: center;
+        padding-left: 0;
+    }
+
+    .btn-nav{
+        font-size: 14px;
     }
 }
 
@@ -89,7 +94,7 @@ header{
     color: white;
     padding: 10px;
     font-family: 'Times New Roman', Times, serif;
-    font-size: 17px;
+    font-size: 14px;
 }
 
 /* SWIPER */
@@ -210,13 +215,12 @@ header{
 }
 
 .banner-text{
-    font-size: 30px;
     color: #622040;
     position: absolute;
-    top: 70%;
+    top: 40%;
     left: 50%;
     transform: translate(-50%, -50%);
-    padding: 10px 20px;
+    font-size: 20px;
 }
 
 .btn-banner{
@@ -257,17 +261,19 @@ header{
 /* NOTATKI */
 
 .note{
-    transform: scale(0.3);
-    object-fit: contain;
-    background-size: cover;
-    display: inline-flex;
-    margin: -330px;
-    margin-top: -650px;
-    margin-bottom: -680px;
+    display: flex;
+    width: 45%;
+    padding-top: 20px;
+    align-items: center;
 }
 
-.m-note{
+.m-note {
+    width: 100%;
     text-align: center;
+    display: flex;
+    gap: 3rem;
+    align-items: center;
+    justify-content: center;
 }
 
 .fly-phone{
@@ -280,6 +286,13 @@ header{
 
 .close{
     display: none;
+}
+
+.regulamin-s{
+    margin-left: 100px;
+    margin-right: 100px;
+    border-left: 5px solid #622040;
+    
 }
 
 @media screen and (max-width: 500px) {
@@ -302,6 +315,14 @@ header{
 
     .heart{
         display: none;
+    }
+
+    .swiper-btn{
+        display: block;
+        height: 50%;
+        font-size: 20px;
+        width: 5%;
+        padding-top: 25px;
     }
 
     .more{
@@ -327,6 +348,25 @@ header{
         display: flex;
         z-index: 4;
         display: none;
+    }
+
+    .note{
+        display: flex;
+        width: 90%;
+        padding-top: 20px;
+        align-items: center;
+    }
+    
+    .m-note{
+        text-align: center;
+        align-items: center;
+        display: flex;
+        justify-content: center;
+    }
+
+    .regulamin-s{
+        margin-right: 50px;
+        margin-left: 50px;
     }
 
     .list-1{
@@ -362,9 +402,14 @@ header{
         font-size: 15px;
         color: #622040;
         position: absolute;
-        top: 35%;
+        top: 25%;
         left: 50%;
         transform: translate(-50%, -50%);
         padding: 10px 20px;
+    }
+
+    .btn-banner{
+        padding: 5px;
+        font-size: 10px;
     }
 }
