@@ -59,3 +59,14 @@ document.getElementById('heart-reverse').addEventListener("mouseleave", function
 })
 
 
+function show_more(){
+    document.getElementById('menu_pole').style.display = 'flex';
+    document.getElementById('menu_phone').style.display = 'none';
+    document.getElementById('close_phone').style.display = 'flex';
+}
+
+function close_more(){
+    document.getElementById('menu_pole').style.display = 'none';
+    document.getElementById('menu_phone').style.display = 'flex';
+    document.getElementById('close_phone').style.display = 'none';
+}
