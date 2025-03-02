@@ -1,0 +1,140 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doroteaaaa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="s_main.css">
+    <link rel="stylesheet" href="s_regulamin.css">
+</head>
+<body>
+    
+    <header class="d-flex">
+        <div class="logo">
+            <a href="main.html"><img class="logo-img" src="image/logo-1.png" alt=""></a>
+        </div>
+        <div class="lista-header-1">
+            <ul class="lista-header">
+                <li>
+                    <a href="przedmioty.html">PRZEDMIOTY</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="">PREMIUM</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="">KONTAKT</a>
+                    <span></span>
+                </li>
+            </ul>
+        </div>
+        <div class="ikony">
+            <ion-icon id="heart" class="heart" name="heart-empty" onclick="ulubione()"></ion-icon>
+            <ion-icon id="full-heart" class="heart hidden" name="heart" onclick="ulubione()"></ion-icon>
+            <ion-icon id="konto" class="konto" name="contact" onclick="konto()"></ion-icon>
+        </div>
+        <div class="more-phone"> 
+            <ion-icon name="menu"></ion-icon>
+        </div>
+    </header>
+    <div class="fly-ulu" id="fly-ulu">
+        <div style="float: right; width: 100%;">
+            <div style="width: 100%; height: 40px;"><ion-icon name="close" onclick="close_konto()"></ion-icon></div>
+            <div class="ulu-notatki-all">
+                <div id="notatka-ulu-1" class="ulu-notatka hidden">
+                    <img src="image/notatki/biologia 17.02.25.jpg" alt="">
+                    <ion-icon id="heart-reverse-full" class="ulu-heart" name="heart" onclick="ulu_1_close()"></ion-icon>
+                    <ion-icon id="heart-reverse" class="ulu-heart" name="heart-empty" onclick="ulu_1_close()"></ion-icon>
+                </div>
+                <div id="notatka-ulu-2" class="ulu-notatka hidden">
+                    <img src="image/notatki/biologia 17.02.25.jpg" alt="">
+                    <ion-icon id="heart-reverse-full" class="ulu-heart" name="heart" onclick="ulu_2_close()"></ion-icon>
+                    <ion-icon id="heart-reverse" class="ulu-heart" name="heart-empty" onclick="ulu_2_close()"></ion-icon>
+                </div>
+                <div id="notatka-ulu-3" class="ulu-notatka hidden">
+                    <img src="image/notatki/biologia 17.02.25.jpg" alt="">
+                    <ion-icon id="heart-reverse-full" class="ulu-heart" name="heart" onclick="ulu_3_close()"></ion-icon>
+                    <ion-icon id="heart-reverse" class="ulu-heart" name="heart-empty" onclick="ulu_3_close()"></ion-icon>
+                </div>
+                <div id="notatka-ulu-4" class="ulu-notatka hidden">
+                    <img src="image/notatki/biologia 17.02.25.jpg" alt="">
+                    <ion-icon id="heart-reverse-full" class="ulu-heart" name="heart" onclick="ulu_4_close()"></ion-icon>
+                    <ion-icon id="heart-reverse" class="ulu-heart" name="heart-empty" onclick="ulu_4_close()"></ion-icon>
+                </div>
+                <div id="notatka-ulu-5" class="ulu-notatka hidden">
+                    <img src="image/notatki/biologia 17.02.25.jpg" alt="">
+                    <ion-icon id="heart-reverse-full" class="ulu-heart" name="heart" onclick="ulu_5_close()"></ion-icon>
+                    <ion-icon id="heart-reverse" class="ulu-heart" name="heart-empty" onclick="ulu_5_close()"></ion-icon>
+                </div>
+                <div id="notatka-ulu-6" class="ulu-notatka hidden">
+                    <img src="image/notatki/biologia 17.02.25.jpg" alt="">
+                    <ion-icon id="heart-reverse-full" class="ulu-heart" name="heart" onclick="ulu_6_close()"></ion-icon>
+                    <ion-icon id="heart-reverse" class="ulu-heart" name="heart-empty" onclick="ulu_6_close()"></ion-icon>
+                </div>
+                <div id="notatka-ulu-7" class="ulu-notatka hidden">
+                    <img src="image/notatki/biologia 17.02.25.jpg" alt="">
+                    <ion-icon id="heart-reverse-full" class="ulu-heart" name="heart" onclick="ulu_7_close()"></ion-icon>
+                    <ion-icon id="heart-reverse" class="ulu-heart" name="heart-empty" onclick="ulu_7_close()"></ion-icon>
+                </div>
+                <div id="notatka-ulu-8" class="ulu-notatka hidden">
+                    <img src="image/notatki/biologia 17.02.25.jpg" alt="">
+                    <ion-icon id="heart-reverse-full" class="ulu-heart" name="heart" onclick="ulu_8_close()"></ion-icon>
+                    <ion-icon id="heart-reverse" class="ulu-heart" name="heart-empty" onclick="ulu_8_close()"></ion-icon>
+                </div>
+                <div id="notatka-ulu-9" class="ulu-notatka hidden">
+                    <img src="image/notatki/biologia 17.02.25.jpg" alt="">
+                    <ion-icon id="heart-reverse-full" class="ulu-heart" name="heart" onclick="ulu_9_close()"></ion-icon>
+                    <ion-icon id="heart-reverse" class="ulu-heart" name="heart-empty" onclick="ulu_9_close()"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fly-konto" id="fly-konto">
+        <div style="float: right; width: 100%;">
+            <ion-icon name="close" onclick="close_ulubione()"></ion-icon>
+        </div>
+    </div>
+
+    <main>
+        <section class="regulamin">
+            <ul>
+                <li><strong>Art. 1 Postanowienia ogólne.</strong></li>
+                <li>§ 1. Szczęść Boże i ratuj się kto może.</li>
+                <li>§ 2. Osoba, która opracowała notatkę, jest jej twórcą i przysługuje jej pełnia praw autorskich zgodnie z ustawą o prawie autorskim i prawach pokrewnych.</li>
+                <li>§ 3. Twórca ma wyłączne prawo do decydowania o wykorzystaniu notatki, w tym jej kopiowania, udostępniania i rozpowszechniania.</li>
+            </ul>
+
+            <ul>
+                <li><strong>Art. 2 Udostępnianie</strong></li>
+                <li>§ 1. Udostępnienie notatki innym osobom bez zgody twórcy stanowi naruszenie praw autorskich.</li>
+                <li>§ 2. W ramach dozwolonego użytku prywatnego można korzystać z cudzych notatek, pod warunkiem że są one używane wyłącznie na własny użytek, np. do nauki przed sprawdzianem. Udostępnienie notatki w grupie uczniów bez zgody twórcy przekracza granice dozwolonego użytku.</li>
+            </ul>
+
+            <ul>
+                <li><strong>Art.3 Plagiat</strong></li>
+                <li>§ 1. Kopiowanie treści notatki bez zgody twórcy oraz podawanie jej jako własnej pracy jest plagiatem i stanowi naruszenie praw autorskich.</li>
+                <li>§ 2. Użycie fragmentów notatki wymaga odpowiedniego oznaczenia źródła i przytoczenia autora.</li>
+            </ul>
+        
+            <ul>
+                <li><strong>Art. 4 Naruszenie</strong></li>
+                <li>§ 1. Naruszenie praw autorskich może prowadzić do odpowiedzialności cywilnej lub karnej. W przypadku notatek, użycie cudzych notatek bez zgody twórcy może skutkować konsekwencjami fizycznymi (np. wpierdolem) lub psychicznymi.</li>
+                <li>§ 2. Osoba, której prawa autorskie zostały naruszone, może zgłosić sprawę za pośrednictwem wiadomości prywatnej discord użytkownika doro_tea.</li>
+            </ul>
+
+            <ul>
+                <li><strong>Art. 5 Postanowienia końcowe</strong></li>
+                <li>§ 1. Regulamin ten wchodzi w życie z dniem jego ogłoszenia i obowiązuje wszystkich uczniów, którzy korzystają z notatek przed sprawdzianem.</li>
+            </ul>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="app.js"></script>
+    <script src="app_ulubione.js"></script>
+</body>
+</html>

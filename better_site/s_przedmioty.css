@@ -1,0 +1,59 @@
+.kafelki{
+    display: block;
+    width: 100%;
+}
+
+.kafelki-div{
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+}
+
+.kafelki-div a{
+    align-content: center;
+    width: 30%;
+    height: 150px;
+    text-align: center;
+    margin: 20px;
+    padding: 1px;
+    border-radius: 20px;
+    background-color: rgb(193, 141, 226);
+    text-decoration: none;
+    justify-items: center;
+}
+
+.kafelki-div a div{
+    width: fit-content;
+}
+
+.kafelki-div h3{
+    color: rgb(85 26 139);
+}
+
+.kafelki-div span::after{
+    content: '';
+    height: 1px;
+    width: 0;
+    display: block;
+    background-color: rgb(85 26 139);
+    transition: width .3s;
+}
+ 
+.kafelki-div div:hover span::after{
+    width: 100%;
+}
+
+li{
+    list-style: none;
+}
+
+
+@media screen and (max-width: 768px) {
+    .kafelki-div{
+        flex-wrap: wrap;
+    }
+
+    .kafelki-div a{
+        width: 100%;
+    }
+}
