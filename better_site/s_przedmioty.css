@@ -55,5 +55,8 @@ li{
 
     .kafelki-div a{
         width: 100%;
+        text-align: center;
+        justify-content: center;
+        display: flex;
     }
 }
