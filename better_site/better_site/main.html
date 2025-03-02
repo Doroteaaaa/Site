@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Doroteaaaa</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.css"/>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="s_main.css">
+</head>
+<body>
+    
+    <header class="d-flex">
+        <div class="logo">
+            <a href="main.html"><img class="logo-img" src="image/logo-1.png" alt=""></a>
+        </div>
+        <div class="lista-header-1">
+            <ul class="lista-header">
+                <li>
+                    <a href="przedmioty.html">PRZEDMIOTY</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="">PREMIUM</a>
+                    <span></span>
+                </li>
+                <li>
+                    <a href="">KONTAKT</a>
+                    <span></span>
+                </li>
+            </ul>
+        </div>
+        <div class="ikony">
+            <ion-icon id="heart" class="heart" name="heart-empty" onclick="ulubione()"></ion-icon>
+            <ion-icon id="full-heart" class="heart hidden" name="heart" onclick="ulubione()"></ion-icon>
+            <ion-icon id="konto" class="konto" name="contact" onclick="konto()"></ion-icon>
+        </div>
+        <div class="more-phone"> 
+            <ion-icon  id="menu_phone" name="menu" onclick="show_more()"></ion-icon>
+            <ion-icon id="close_phone" name="close" style="display: none;" onclick="close_more()"></ion-icon>
+        </div>
+    </header>
+    <div class="fly-ulu" id="fly-ulu">
+        <div style="float: right; width: 100%;">
+            <div style="width: 100%; height: 40px;"><ion-icon name="close" onclick="close_konto()"></ion-icon></div>
+            <div class="ulu-notatki-all">
+                <div id="notatka-ulu-1" class="ulu-notatka hidden">
+                    <img src="image/notatki/biologia 17.02.25.jpg" alt="">
+                    <ion-icon id="heart-reverse-full" class="ulu-heart" name="heart" onclick="ulu_1_close()"></ion-icon>
+                    <ion-icon id="heart-reverse" class="ulu-heart" name="heart-empty" onclick="ulu_1_close()"></ion-icon>
+                </div>
+                <div id="notatka-ulu-2" class="ulu-notatka hidden">
+                    <img src="image/notatki/biologia 17.02.25.jpg" alt="">
+                    <ion-icon id="heart-reverse-full" class="ulu-heart" name="heart" onclick="ulu_2_close()"></ion-icon>
+                    <ion-icon id="heart-reverse" class="ulu-heart" name="heart-empty" onclick="ulu_2_close()"></ion-icon>
+                </div>
+                <div id="notatka-ulu-3" class="ulu-notatka hidden">
+                    <img src="image/notatki/biologia 17.02.25.jpg" alt="">
+                    <ion-icon id="heart-reverse-full" class="ulu-heart" name="heart" onclick="ulu_3_close()"></ion-icon>
+                    <ion-icon id="heart-reverse" class="ulu-heart" name="heart-empty" onclick="ulu_3_close()"></ion-icon>
+                </div>
+                <div id="notatka-ulu-4" class="ulu-notatka hidden">
+                    <img src="image/notatki/biologia 17.02.25.jpg" alt="">
+                    <ion-icon id="heart-reverse-full" class="ulu-heart" name="heart" onclick="ulu_4_close()"></ion-icon>
+                    <ion-icon id="heart-reverse" class="ulu-heart" name="heart-empty" onclick="ulu_4_close()"></ion-icon>
+                </div>
+                <div id="notatka-ulu-5" class="ulu-notatka hidden">
+                    <img src="image/notatki/biologia 17.02.25.jpg" alt="">
+                    <ion-icon id="heart-reverse-full" class="ulu-heart" name="heart" onclick="ulu_5_close()"></ion-icon>
+                    <ion-icon id="heart-reverse" class="ulu-heart" name="heart-empty" onclick="ulu_5_close()"></ion-icon>
+                </div>
+                <div id="notatka-ulu-6" class="ulu-notatka hidden">
+                    <img src="image/notatki/biologia 17.02.25.jpg" alt="">
+                    <ion-icon id="heart-reverse-full" class="ulu-heart" name="heart" onclick="ulu_6_close()"></ion-icon>
+                    <ion-icon id="heart-reverse" class="ulu-heart" name="heart-empty" onclick="ulu_6_close()"></ion-icon>
+                </div>
+                <div id="notatka-ulu-7" class="ulu-notatka hidden">
+                    <img src="image/notatki/biologia 17.02.25.jpg" alt="">
+                    <ion-icon id="heart-reverse-full" class="ulu-heart" name="heart" onclick="ulu_7_close()"></ion-icon>
+                    <ion-icon id="heart-reverse" class="ulu-heart" name="heart-empty" onclick="ulu_7_close()"></ion-icon>
+                </div>
+                <div id="notatka-ulu-8" class="ulu-notatka hidden">
+                    <img src="image/notatki/biologia 17.02.25.jpg" alt="">
+                    <ion-icon id="heart-reverse-full" class="ulu-heart" name="heart" onclick="ulu_8_close()"></ion-icon>
+                    <ion-icon id="heart-reverse" class="ulu-heart" name="heart-empty" onclick="ulu_8_close()"></ion-icon>
+                </div>
+                <div id="notatka-ulu-9" class="ulu-notatka hidden">
+                    <img src="image/notatki/biologia 17.02.25.jpg" alt="">
+                    <ion-icon id="heart-reverse-full" class="ulu-heart" name="heart" onclick="ulu_9_close()"></ion-icon>
+                    <ion-icon id="heart-reverse" class="ulu-heart" name="heart-empty" onclick="ulu_9_close()"></ion-icon>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="fly-konto" id="fly-konto">
+        <div style="float: right; width: 100%;">
+            <ion-icon name="close" onclick="close_ulubione()"></ion-icon>
+        </div>
+    </div>
+    <div id="menu_pole" class="menu-pole">cos</div>
+
+    <main>
+        <section class="bloki-3">
+            <div class="pole-blok-3">
+                <div class="blok-3-img" style="background-image: url(image/Wszystkie\ przedmioty\ w\ jednym\ miejscu!.png);">
+
+                </div>
+                <a href="przedmioty.html">
+                    <button>
+                        Dowiedz się więcej
+                        <span></span>
+                    </button>
+                </a>
+            </div>
+            <div class="pole-blok-3">
+                <div class="blok-3-img" style="background-image: url(image/PREMIUM.png);">
+
+                </div>
+                <a href="premium.html">
+                    <button>
+                        Dowiedz się więcej
+                        <span></span>
+                    </button>
+                </a>
+            </div>
+            <div class="pole-blok-3">
+                <div class="blok-3-img" style="background-image: url(image/SZYBKI.png);">
+
+                </div>
+                <a href="kontakt.html">
+                    <button>
+                        Dowiedz się więcej
+                        <span></span>
+                    </button>
+                </a>
+            </div>
+        </section>
+    </main>
+
+    <script src="https://cdn.jsdelivr.net/npm/swiper@11/swiper-bundle.min.js"></script>
+    <script src="https://unpkg.com/ionicons@4.5.10-0/dist/ionicons.js"></script>
+    <script src="app.js"></script>
+    <script src="app_ulubione.js"></script>
+</body>
+</html>

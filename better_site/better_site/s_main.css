@@ -1,0 +1,247 @@
+body{
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    background-color: #272626c4;
+}
+
+.d-flex{
+    display: flex;
+}
+
+header{
+    width: 100%;
+    height: 20%;
+    background-color: #272626;
+    align-items: center;
+}
+
+.logo{
+    width: 40%;
+}
+
+.logo-img{
+    width: 70%;
+    padding: 5px;
+}
+
+.lista-header-1{
+    width: 50%;
+}
+
+.lista-header{
+    list-style: none; 
+    display: flex;
+    gap: 1rem;
+    float: right;
+    font-weight: bold;
+    color: rgb(193, 141, 226);
+}
+
+.lista-header li a{
+    text-decoration: none;
+    color: rgb(193, 141, 226);
+}
+
+.lista-header span::after{
+    content: '';
+    height: 1px;
+    width: 0;
+    display: block;
+    background-color: rgb(193, 141, 226);
+    transition: width .3s;
+}
+ 
+.lista-header li:hover span::after{
+    width: 100%;
+}
+
+.ikony{
+    width: 10%;
+    display: flex;
+    justify-content: center;
+    gap: 1rem;
+}
+
+.konto:hover{
+    color: rgb(193, 141, 226, 0.9);
+}
+
+.heart, .konto{
+    float: right;
+    width: 30px;
+    height: 30px;
+    color: rgb(193, 141, 226);
+    cursor: pointer;
+}
+
+.fly-konto{
+    width: 31%;
+    display: none;
+    float: right;
+    height: 100%;
+    background-color: #272626;
+    z-index: 999;
+    position: absolute;
+    right: 0;
+}
+
+.fly-ulu{
+    width: 31%;
+    height: 100%;
+    display: none;
+    float: right;
+    background-color: #272626;
+    z-index: 999;
+    position: absolute;
+    right: 0;
+}
+
+.ulu-notatki-all{
+    display: flex;
+    flex-wrap: wrap;
+    gap: 1rem;
+    padding: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.ulu-notatka{
+    width: 30%;
+    gap: 1rem;
+    display: flex
+}
+
+.ulu-notatka img{
+    width: 100%;
+    height: 100%;
+}
+
+.ulu-heart{
+    color: #222428;
+    position: absolute;
+    font-size: 25px;
+}
+
+ion-icon[name="close"]{
+    color: rgb(193, 141, 226);
+    width: 30px;
+    height: 30px;
+    float: right;
+}
+
+.nick_haslo{
+    display: flow-root;
+    align-items: center;
+    text-align: center;
+    padding: 4%;
+}
+
+.hidden{
+    display: none;
+}
+
+
+/* MAIN */
+
+.bloki-3{
+    display: flex;
+    gap: 3rem;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding-top: 2%;
+}
+
+.pole-blok-3{
+    height: 450px;
+    width: 20%;
+    background-color: rgb(193, 141, 226);
+    border-radius: 20px;
+    padding: 10px;
+}
+
+.blok-3-img{
+    background-size: cover;
+    background-repeat: no-repeat;
+    width: 100%;
+    height: 80%;
+    border-radius: 20px;
+}
+
+.pole-blok-3 button{
+    background: #272626;
+    border-radius: 20px;
+    color: rgb(193, 141, 226);
+    padding: 8px;
+    padding-right: 20px;
+    padding-left: 20px;
+    margin-top: 20px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.pole-blok-3 button span::after{
+    content: '';
+    height: 1px;
+    width: 0;
+    display: block;
+    background-color: rgb(193, 141, 226);
+    transition: width .3s;
+}
+ 
+.pole-blok-3 button:hover span::after{
+    width: 100%;
+}
+
+.more-phone{
+    color: rgb(193, 141, 226);
+    font-size: 50px;
+    align-items: center;
+    text-align: center;
+    display: none;
+    position: absolute;
+    right: 0;
+    margin-right: 20px;
+}
+
+.menu-pole{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #272626;
+    border-top: 1px solid rgb(193, 141, 226);
+    display: none;
+}
+
+#close_phone{
+    width: 50px;
+    height: 50px;
+}
+
+@media screen and (max-width: 768px) {
+    
+    .pole-blok-3{
+        width: 80%;
+    }
+
+    .bloki-3{
+        flex-wrap: wrap;
+    }
+
+    .lista-header-1{
+        display: none;
+    }
+
+    .ikony{
+        display: none;
+    }
+
+    .more-phone{
+        display: flex;
+    }
+
+    .logo{
+        width: 100%;
+    }
+}
